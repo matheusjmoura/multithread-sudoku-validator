@@ -20,6 +20,6 @@ public class ValidarQuadrante2 extends Thread {
 		vetorQuadrante = sudoku.Sudoku.popularVetorQuadrante(0, 3, 3, 6);
 		
 		// Valida se no mesmo quadrante há mais de um número igual
-		sudoku.Sudoku.validar(vetorQuadrante, "Quadrante 2");	
+		sudoku.Sudoku.validar(vetorQuadrante, "Quadrante 02");	
 	}
 }
