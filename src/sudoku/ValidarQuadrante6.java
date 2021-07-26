@@ -3,9 +3,9 @@ package sudoku;
 import java.util.List;
 
 /**
- * @author Matheus José de Moura - 1693239
- * AS36A - Programação Distribuída - N16
- * Engenharia de Computação - UTFPR/CP
+ * @author Matheus Jose de Moura - 1693239
+ * AS36A - Programacao Distribuida - N16
+ * Engenharia de Computacao - UTFPR/CP
  */
 public class ValidarQuadrante6 extends Thread {
 
@@ -17,7 +17,7 @@ public class ValidarQuadrante6 extends Thread {
         // Popula a lista com os dados do quadrante
         vetorQuadrante = sudoku.Sudoku.popularVetorQuadrante(3, 6, 6, 9);
 
-        // Valida se no mesmo quadrante há mais de um número igual
+        // Valida se no mesmo quadrante ha mais de um numero igual
         sudoku.Sudoku.validar(vetorQuadrante, "Quadrante 6");
     }
 }

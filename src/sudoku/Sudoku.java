@@ -8,9 +8,9 @@ import java.util.logging.Logger;
 import java.util.stream.Collectors;
 
 /**
- * @author Matheus José de Moura - 1693239
- * AS36A - Programação Distribuída - N16
- * Engenharia de Computação - UTFPR/CP
+ * @author Matheus Jose de Moura - 1693239
+ * AS36A - Programacao Distribuida - N16
+ * Engenharia de Computacao - UTFPR/CP
  */
 public class Sudoku {
 
@@ -28,7 +28,7 @@ public class Sudoku {
 
     static Logger logger = Logger.getLogger(Sudoku.class.getName());
 
-    // Valida se na linha/coluna/quadrante analisado há mais de um número igual
+    // Valida se na linha/coluna/quadrante analisado ha mais de um numero igual
     public static void validar(List<Integer> vetorComparacao, String posicao) {
         List<Integer> vetorGabarito = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9);
         vetorGabarito.forEach(numeroGabarito -> {
@@ -41,7 +41,7 @@ public class Sudoku {
         });
     }
 
-    // Popula a lista de comparação com os dados do quadrante a ser validado
+    // Popula a lista de comparacao com os dados do quadrante a ser validado
     public static List<Integer> popularVetorQuadrante(Integer inicioLinha, Integer finalLinha, Integer inicioColuna,
                                                       Integer finalColuna) {
         List<Integer> vetorQuadrante = new ArrayList<>();
@@ -51,7 +51,7 @@ public class Sudoku {
         return vetorQuadrante;
     }
 
-    // Popula a lista de comparação com os dados da linha/coluna a ser validada
+    // Popula a lista de comparacao com os dados da linha/coluna a ser validada
     public static List<Integer> popularVetorLinhaColuna(Integer posicao, Boolean isLinha) {
         List<Integer> vetorLinhaColuna = new ArrayList<>();
         for (Integer referencia = 0; referencia < 9; referencia++) {
@@ -106,6 +106,6 @@ public class Sudoku {
             Thread.currentThread().interrupt();
         }
 
-        logger.info("Processo de validação finalizado.");
+        logger.info("Processo de validacao finalizado.");
     }
 }

@@ -3,9 +3,9 @@ package sudoku;
 import java.util.List;
 
 /**
- * @author Matheus José de Moura - 1693239
- * AS36A - Programação Distribuída - N16
- * Engenharia de Computação - UTFPR/CP
+ * @author Matheus Jose de Moura - 1693239
+ * AS36A - Programacao Distribuida - N16
+ * Engenharia de Computacao - UTFPR/CP
  */
 public class ValidarLinhas extends Thread {
 
@@ -19,7 +19,7 @@ public class ValidarLinhas extends Thread {
             // Popula a lista com os dados da linha
             vetorLinhas = sudoku.Sudoku.popularVetorLinhaColuna(i, true);
 
-            // Valida se na linha há mais de um número igual
+            // Valida se na linha ha mais de um numero igual
             sudoku.Sudoku.validar(vetorLinhas, "Linha ".concat(String.valueOf(i + 1)));
             vetorLinhas.clear();
         }
